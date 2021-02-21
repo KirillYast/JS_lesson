@@ -5,14 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .wrp {
+            display: flex;
+        }
+
+        .blo {
+            width: 50%;
+        }
+
+        /*board style*/
+        .board {
+            border-spacing: 0;
+            margin: 15px;
+        }
+
+        .block {
+            width: 35px;
+            height: 35px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .text {
+            padding: 0 5px 0 0;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 
 <body>
     <script defer src="main.js"></script>
-    <ul>
-        <li><a href="task_1.html">Задание 1</a></li>
-        <li><a href="task_2.html">Задание 2</a></li>
-    </ul>
+    <div class="wrp">
+        <div class="boar blo">
+            <h3>Задание с доской</h1>
+                <button onclick="return addBoard()">Доска </button>
+        </div>
+        <div id="catalog" class="blo">
+            <button onclick="return basket.start()">Корзина</button>
+        </div>
+    </div>
 </body>
 
 </html>
